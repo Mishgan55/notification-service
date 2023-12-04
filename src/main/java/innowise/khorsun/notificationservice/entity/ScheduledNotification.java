@@ -41,4 +41,9 @@ public class ScheduledNotification {
     private LocalDateTime scheduledTime;
     @Column(name = "creation_date")
     private LocalDateTime creationDate;
+    @Column(name = "is_sent")
+    private Boolean isSent;
+    @Column(name="find_by_topic")
+    @Enumerated(value = EnumType.STRING)
+    private Topic findByTopic;
 }

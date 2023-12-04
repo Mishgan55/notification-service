@@ -23,11 +23,12 @@ public class ScheduledNotificationController {
      * Example json
      * {
      *     "notificationName": "sales-for-customers-2023",
-     *     "topic": "PAYMENT",
-     *     "sendMessage": "Happy new year! We are giving you a discount of $30",
+     *     "topic": "SALES",
+     *     "sendMessage": "Happy new year! We are giving you a discount of $30", example message for sending
      *     "startTimeForSearch": "2023-01-01T01:00:00.00000",
      *     "endTimeForSearch": "2023-12-31T12:00:00.00000",
      *     "scheduledTime": "2023-12-31T12:00:00.00000"   here you can specify the time at which we need to send notifications
+     *     "findByTopic" : "PAYMENT";  here you can specify topic by which we will search our clients
      * }*/
     @PostMapping("/create-scheduled-notification")
     public void createScheduledNotification(@RequestBody ScheduledNotificationRequest request) {

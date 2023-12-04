@@ -12,5 +12,6 @@ public interface ScheduleNotificationMapper {
     @Mapping(target = "startTimeForSearch", source = "startTimeForSearch")
     @Mapping(target = "endTimeForSearch", source = "endTimeForSearch")
     @Mapping(target = "scheduledTime", source = "scheduledTime")
+    @Mapping(target = "findByTopic", source = "findByTopic")
     ScheduledNotification scheduledNotificationRequestToScheduledNotification(ScheduledNotificationRequest request);
 }

@@ -14,5 +14,5 @@ public class ScheduledNotificationRequest {
     private LocalDateTime startTimeForSearch;
     private LocalDateTime endTimeForSearch;
     private LocalDateTime scheduledTime;
-
+    private Topic findByTopic;
 }
